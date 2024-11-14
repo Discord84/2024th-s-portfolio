@@ -16,7 +16,7 @@ body {
 .staro {
     position: absolute;
     transform: rotate(-25deg);
-    right: -0px;
+    right: 30px;
     top: -103px;
 }
 
@@ -140,13 +140,15 @@ body {
 }
 
 .tab {
+    margin-top: 200px;
     top: 380px;
     right: 82px;
 }
 
 .arrow {
-    top: 280px;
-    left: 740px;
+    position: absolute;
+    top: 10px;
+    left: 45%;
 }
 
 .smile-img {
@@ -155,9 +157,9 @@ body {
 
 .smile {
     display: flex;
-    position: relative;
-    top: 60px;
-    left: -130px;
+    position: absolute;
+    top: 30px;
+    left: 600px;
 }
 
 h1 {
@@ -224,8 +226,8 @@ h1 {
 }
 
 .main-arrow {
+    margin-top: 35px;
     position: relative;
-    left: 135px;
 }
 
 .main-main {
@@ -330,7 +332,7 @@ h1 {
 .stare {
     position: absolute;
     transform: rotate(-25deg);
-    right: 0px;
+    right: 30px;
     top: 1400px;
 }
 
