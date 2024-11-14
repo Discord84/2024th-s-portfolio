@@ -781,8 +781,9 @@ h1 {
 }
 
 .form {
+    left: 30%;
     overflow: hidden;
-    position: relative;
+    position: fixed;
     border: 5px solid black;
     border-radius: 29px;
     display: flex;
@@ -869,6 +870,7 @@ label {
     content: "";
     background: url(images/pink-star.png) no-repeat;
 }
+
 .form-close {
     width: 30px;
     height: 30px;
@@ -878,43 +880,54 @@ label {
     border: none;
     transition: 2s;
 }
+
 .form-close:hover {
     transform: rotate(1080deg);
     background: url(images/close-red.png) center/cover no-repeat;
 }
+
 .form-container-active {
     display: block;
 }
+
 .form-container-off {
     display: none;
 }
+
 .formLog {
     text-align: center;
 }
+
 .wow {
     opacity: 0;
     transition: all 0.5s 0.5s ease-out;
 }
+
 .animated {
     opacity: 1;
 }
-.portfolio-slide1{
+
+.portfolio-slide1 {
     background: url(images/portfolioscroll.jpg) center/contain no-repeat;
     border: 3px dashed black;
 }
-.portfolio-slide2{
+
+.portfolio-slide2 {
     background: url(images/catsscroll.jpg) center/contain no-repeat;
     border: 3px dashed black;
 }
-.portfolio-slide3{
+
+.portfolio-slide3 {
     background: url(images/indiescroll.png) center/contain no-repeat;
     border: 3px dashed black;
 }
-.portfolio-slide4{
+
+.portfolio-slide4 {
     background: url(images/srarscroll.jpg) center/contain no-repeat;
     border: 3px dashed black;
 }
-.portfolio-slide5{
+
+.portfolio-slide5 {
     background: url(images/high\ landing.png) center/contain no-repeat;
     border: 3px dashed black;
 }
@@ -990,46 +1003,55 @@ label {
     background-color: rgb(54, 94, 77);
 }
 
-@media(max-width: 1280px){
+@media(max-width: 1280px) {
     .main {
         flex-direction: column;
     }
+
     .main-left {
         width: 100%;
         margin-top: 50px;
     }
+
     .main-right {
         width: 100%;
     }
+
     .txt {
         text-align: center;
     }
+
     .txt::before {
         position: absolute;
         left: 600px;
     }
+
     .tab2 img {
         display: flex;
         margin-left: auto;
         margin-right: auto;
         text-align: center;
     }
+
     .button {
         display: block;
         margin-left: auto;
         margin-right: auto;
     }
+
     .tab {
         height: 600px;
         width: 600px;
         margin-right: auto;
         margin-left: auto;
     }
+
     .main-arrow {
         margin-left: auto;
         margin-right: auto;
         text-align: center;
     }
+
     .smile {
         display: flex;
         text-align: center;
@@ -1037,5 +1059,5 @@ label {
         margin-left: auto;
         left: 35%;
     }
-    
+
 }
