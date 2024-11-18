@@ -915,21 +915,32 @@ label {
 .portfolio-slide2 {
     background: url(images/catsscroll.jpg) center/contain no-repeat;
     border: 3px dashed black;
+    position: relative;
+}
+
+.slide-link {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: block;
 }
 
 .portfolio-slide3 {
     background: url(images/indiescroll.png) center/contain no-repeat;
     border: 3px dashed black;
+    position: relative;
 }
 
 .portfolio-slide4 {
     background: url(images/srarscroll.jpg) center/contain no-repeat;
     border: 3px dashed black;
+    position: relative;
 }
 
 .portfolio-slide5 {
     background: url(images/high\ landing.png) center/contain no-repeat;
     border: 3px dashed black;
+    position: relative;
 }
 
 
