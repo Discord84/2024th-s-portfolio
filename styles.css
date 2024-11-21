@@ -683,7 +683,6 @@ h1 {
 }
 
 .endbutton {
-
     position: relative;
     margin-top: 50px;
     background-color: #BAE6FF;
@@ -734,10 +733,12 @@ h1 {
 
 .footer {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
+    align-items: center;
     border-top: 6px solid black;
     margin-top: 162px;
-    padding: 89px 101px;
+    padding: 35px 30px;
 }
 
 .footer-social {
@@ -751,6 +752,7 @@ h1 {
 }
 
 .footer-title {
+    margin-bottom: 25px;
     display: flex;
     align-items: center;
 }
@@ -762,7 +764,7 @@ h1 {
 }
 
 .fp {
-
+    margin-bottom: 50px;
     font-size: 32px;
 }
 
@@ -1071,4 +1073,117 @@ label {
         left: 35%;
     }
 
+}
+
+@media(max-width: 660px) {
+    .container {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .stara {
+        display: none;
+    }
+
+    .stare {
+        display: none;
+    }
+
+    .staro {
+        display: none;
+    }
+
+    .starp {
+        display: none;
+    }
+
+    .stari {
+        display: none;
+    }
+
+    .txt::before {
+        left: 300px;
+    }
+
+    .arrow {
+        margin-top: 25px;
+    }
+
+    .endtitle-txt {
+        font-size: 30px;
+    }
+
+    .endtitle {
+        padding: 69px 20px;
+    }
+
+    .endbutton {
+        position: relative;
+        left: initial;
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .about-item {
+        position: initial;
+        max-width: 100%;
+    }
+
+    .ending {
+        margin-top: 0;
+    }
+
+    .about-title img {
+        left: 40%;
+        top: 150px;
+    }
+
+    .skills-content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .s1 {
+        border: 3px solid black;
+    }
+
+    .s2 {
+        border-left: 3px solid black;
+        border-right: 3px solid black;
+    }
+
+    .s3 {
+        border-top: none;
+        border-right: 3px solid black;
+    }
+
+    .s4 {
+        border-top: none;
+        border-right: 3px solid black;
+    }
+
+    .s5 {
+        border-right: 3px solid black;
+    }
+
+    .s6 {
+        border-right: 3px solid black;
+    }
+
+    .beautyfile {
+        padding-bottom: 50px;
+    }
+    .sp {
+        margin-top: 25px;
+        line-height: 35px;
+        font-size: 30px;
+        margin-bottom: 25px;
+    }
+    .portfolio-txt::before {
+        left: 230px;
+    }
+    .portfolio-txt::after {
+        display: none;
+    }
 }
