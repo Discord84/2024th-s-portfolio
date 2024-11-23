@@ -1054,7 +1054,6 @@ label {
 
     .tab {
         height: 600px;
-        width: 600px;
         margin-right: auto;
         margin-left: auto;
     }
@@ -1135,8 +1134,7 @@ label {
     }
 
     .about-title img {
-        left: 40%;
-        top: 150px;
+        display: none;
     }
 
     .skills-content {
@@ -1181,9 +1179,12 @@ label {
         margin-bottom: 25px;
     }
     .portfolio-txt::before {
-        left: 230px;
+        display: none;
     }
     .portfolio-txt::after {
+        display: none;
+    }
+    .txt::before {
         display: none;
     }
 }
