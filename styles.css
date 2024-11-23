@@ -1113,7 +1113,7 @@ label {
     }
 
     .endtitle {
-        padding: 69px 20px;
+        padding: 69px 60px;
     }
 
     .endbutton {
@@ -1185,6 +1185,9 @@ label {
         display: none;
     }
     .txt::before {
+        display: none;
+    }
+    .skills-title::after {
         display: none;
     }
 }
