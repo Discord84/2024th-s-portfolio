@@ -13,11 +13,24 @@
 
 <body>
     <div>
-        <nav class="navigation">
-            <a class="first" href="index.html">Svet</a>
-            <a class="second" href="#about_me">About me</a>
-            <a class="threeth" href="#portfolio">Portfolio</a>
-            <a class="fourth" href="#hire_me">Hire me</a>
+        <nav class="navigation ">
+            <div class="navigation-logo">
+                <img src="images/star.svg" alt="">
+                <a class="first" href="index.html">Svet</a>
+            </div>
+            <div class="burger-cont">
+                <div class="burger">
+                    <span class="burger-line burger-line1"></span>
+                    <span class="burger-line burger-line2"></span>
+                    <span class="burger-line burger-line3"></span>
+                    <span class="burger-line burger-line4"></span>
+                </div>
+                <div class="navigation-cont">
+                    <a class="second" href="#about_me">About me</a>
+                    <a class="threeth" href="#portfolio">Portfolio</a>
+                    <a class="fourth" href="#hire_me">Hire me</a>
+                </div>
+            </div>
         </nav>
     </div>
     <div class="stara">
@@ -139,11 +152,15 @@
         <div class="swiper mySwiper">
             <div class="swiper-wrapper">
                 <div class="swiper-slide portfolio-slide1"></div>
-                <div class="swiper-slide portfolio-slide2"><a class="slide-link" href="https://discord84.github.io/funny-cats/" target="_blank"></a></div>
-                <div class="swiper-slide portfolio-slide4"><a class="slide-link" href="https://discord84.github.io/Stars/" target="_blank"></a></div>
-                <div class="swiper-slide portfolio-slide5"><a class="slide-link" href="https://discord84.github.io/high-landing/" target="_blank"></a></div>
+                <div class="swiper-slide portfolio-slide2"><a class="slide-link"
+                        href="https://discord84.github.io/funny-cats/" target="_blank"></a></div>
+                <div class="swiper-slide portfolio-slide4"><a class="slide-link"
+                        href="https://discord84.github.io/Stars/" target="_blank"></a></div>
+                <div class="swiper-slide portfolio-slide5"><a class="slide-link"
+                        href="https://discord84.github.io/high-landing/" target="_blank"></a></div>
                 <div class="swiper-slide">Slide 6</div>
-                <div class="swiper-slide portfolio-slide3"><a class="slide-link" href="https://discord84.github.io/first-project/" target="_blank"></a></div>
+                <div class="swiper-slide portfolio-slide3"><a class="slide-link"
+                        href="https://discord84.github.io/first-project/" target="_blank"></a></div>
                 <div class="swiper-slide">Slide 7</div>
                 <div class="swiper-slide">Slide 8</div>
                 <div class="swiper-slide">Slide 9</div>
@@ -317,6 +334,7 @@
             grabCursor: true,
         });
     </script>
+    <script src="burger.js"></script>
 </body>
 
 </html>

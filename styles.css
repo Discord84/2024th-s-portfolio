@@ -35,33 +35,91 @@ body {
 }
 
 .navigation {
+    border: 3px solid black;
+
+    background-color: #ffffff;
     display: flex;
+    justify-content: space-between;
     margin-left: auto;
     margin-right: auto;
-    justify-content: center;
     align-items: center;
-    padding-bottom: 83px;
     margin-top: 58px;
-    border-bottom: 6px solid black;
+    border-bottom: 3px solid black;
+    max-width: 732px;
+}
+
+.burger {
+    width: 37px;
+    height: 32px;
+    cursor: pointer;
+    position: relative;
+    display: none;
+}
+
+.burger-line {
+    border-radius: 10px; 
+    display: block;
+    width: 100%;
+    height: 6px;
+    background-color: black;
+    position: absolute;
+    left: 0;
+    transition: 1s;
+}
+
+.burger-line1 {
+    top: 0;
+}
+
+.burger-line2 {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.burger-line3 {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.burger-line4 {
+    bottom: 0;
+}
+
+.burger-active .burger-line1 {
+    opacity: 0;
+}
+
+.burger-active .burger-line4 {
+    opacity: 0;
+}
+
+.burger-active .burger-line2 {
+    transform: translateY(-50%) rotate(45deg);
+}
+
+.burger-active .burger-line3 {
+    transform: translateY(-50%) rotate(-45deg);
+}
+
+.navigation-logo {
+    display: flex;
+    margin-left: 22px;
+}
+
+.navigation-cont {
+    display: flex;
 }
 
 .first {
-    position: relative;
     display: block;
-    border: 5px solid black;
-    border-right: 3px solid black;
     text-decoration: none;
-    padding-top: 31.5px;
-    padding-bottom: 31.5px;
-    padding-right: 121px;
-    padding-left: 69px;
     font-size: 36px;
     color: black;
     font-weight: 700;
     line-height: 40px;
 }
 
-.first::before {
+/* .first::before {
     content: "";
     position: absolute;
     width: 50px;
@@ -69,13 +127,11 @@ body {
     background: url(images/star.svg) no-repeat;
     left: 20px;
     bottom: 25px;
-}
+} */
 
 .second {
     display: block;
-    border: 5px solid black;
-    border-left: 0px solid black;
-    border-right: 3px solid black;
+    border-left: 3px solid black;
     text-decoration: none;
     padding: 31px 19px;
     font-size: 24px;
@@ -88,9 +144,7 @@ body {
 .threeth {
     position: relative;
     display: block;
-    border: 5px solid black;
-    border-left: 0px solid black;
-    border-right: 3px solid black;
+    border-left: 3px solid black;
     text-decoration: none;
     padding: 31px 19px;
     font-size: 24px;
@@ -113,8 +167,7 @@ body {
 
 .fourth {
     display: block;
-    border: 5px solid black;
-    border-left: 0px solid black;
+    border-left: 3px solid black;
     text-decoration: none;
     padding: 31px 19px;
     font-size: 24px;
@@ -1053,7 +1106,6 @@ label {
     }
 
     .tab {
-        height: 600px;
         margin-right: auto;
         margin-left: auto;
     }
@@ -1172,22 +1224,48 @@ label {
     .beautyfile {
         padding-bottom: 50px;
     }
+
     .sp {
         margin-top: 25px;
         line-height: 35px;
         font-size: 30px;
         margin-bottom: 25px;
     }
+
     .portfolio-txt::before {
         display: none;
     }
+
     .portfolio-txt::after {
         display: none;
     }
+
     .txt::before {
         display: none;
     }
+
     .skills-title::after {
         display: none;
+    }
+    .burger {
+        display: block;
+        margin-left: auto;
+    }
+    .navigation-cont {
+        display: none;
+    }
+    .navigation-cont-active {
+        display: flex;
+        flex-direction: column;
+        border-top: 3px solid black;
+    }
+    .navigation {
+        padding-top: 19px;
+    }
+    .threeth {
+        border-top: 3px solid black;
+    }
+    .fourth {
+        border-top: 3px solid black;
     }
 }
