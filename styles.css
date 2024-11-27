@@ -1255,17 +1255,34 @@ label {
         display: none;
     }
     .navigation-cont-active {
+        position: absolute;
+        top: 90px;
+        right: 0px;
         display: flex;
         flex-direction: column;
-        border-top: 3px solid black;
     }
     .navigation {
         padding-top: 19px;
+        padding-bottom: 19px;
+        padding-left: 22px;
     }
     .threeth {
         border-top: 3px solid black;
+        background-color: #ffffff;
+        border-right: 3px solid black
     }
     .fourth {
         border-top: 3px solid black;
+        border-bottom: 3px solid black;
+        background-color: #ffffff;
+        border-right: 3px solid black; 
+    }
+    .second {
+        background-color: #ffffff;
+        border-right: 3px solid black;
+        border-top: 3px solid black;
+    }
+    .burger-cont {
+        padding-right: 22px;
     }
 }
