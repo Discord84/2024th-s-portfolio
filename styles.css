@@ -1252,19 +1252,33 @@ label {
         margin-left: auto;
     }
     .navigation-cont {
-        display: none;
+        /* display: none; */
+        z-index: -1;
+        opacity: 0;
+        position: absolute;
+        top: 90px;
+        right: -3px;
+        display: flex;
+        flex-direction: column;
+        transform: translateY(-300%);
+        transition: 0.5s;
     }
     .navigation-cont-active {
+        z-index: -1;
+        opacity: 1;
         position: absolute;
         top: 90px;
         right: 0px;
         display: flex;
-        flex-direction: column;
+        flex-direction: column; 
+        transform: translateY(0%);
     }
     .navigation {
+        position: relative;
         padding-top: 19px;
         padding-bottom: 19px;
         padding-left: 22px;
+        margin-top: 0;
     }
     .threeth {
         border-top: 3px solid black;
@@ -1280,7 +1294,6 @@ label {
     .second {
         background-color: #ffffff;
         border-right: 3px solid black;
-        border-top: 3px solid black;
     }
     .burger-cont {
         padding-right: 22px;
