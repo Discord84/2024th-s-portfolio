@@ -108,16 +108,19 @@ body {
 }
 .black-navigation-cont {
     top: 50px;
-    z-index: -1;
+    z-index: 52;
     opacity: 0;
     position: absolute;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     transform: translateX(-300%);
     transition: 0.5s;
+    left: 0;
 }
 .black-navigation-cont-active {
-    z-index: -1;
+    left: 0;
+    z-index: 52;
     opacity: 1;
     position: absolute;
     display: flex;
@@ -190,6 +193,7 @@ body {
 
 .navigation-cont {
     display: flex;
+    z-index: -1;
 }
 
 .first {
@@ -307,8 +311,10 @@ h1 {
 }
 
 .tab2 {
-    left: 101px;
-    top: 400px;
+    position: relative;
+    /* left: 101px;
+    top: 400px; */
+    z-index: -5;
 }
 
 .txt {
