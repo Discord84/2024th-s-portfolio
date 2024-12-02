@@ -56,6 +56,88 @@ body {
     display: none;
 }
 
+.burger2 {
+    width: 37px;
+    height: 32px;
+    cursor: pointer;
+    position: relative;
+}
+.spell {
+    border-radius: 10px; 
+    display: block;
+    width: 100%;
+    height: 6px;
+    background-color: white;
+    position: absolute;
+    left: 0;
+    transition: 1s;
+}
+
+.spell1 {
+    top: 0;
+}
+
+.spell2 {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.spell3 {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.spell4 {
+    bottom: 0;
+}
+
+.burger2-active .spell2 {
+    transform: translateY(-50%) rotate(45deg);
+}
+
+.burger2-active .spell3 {
+    transform: translateY(-50%) rotate(-45deg);
+}
+
+.burger2-active .spell1 {
+    opacity: 0;
+}
+
+.burger2-active .spell4 {
+    opacity: 0;
+}
+.black-navigation-cont {
+    top: 50px;
+    z-index: -1;
+    opacity: 0;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    transform: translateX(-300%);
+    transition: 0.5s;
+}
+.black-navigation-cont-active {
+    z-index: -1;
+    opacity: 1;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    transform: translateX(-2%);
+    transition: 0.5s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 .burger-line {
     border-radius: 10px; 
     display: block;
@@ -293,8 +375,9 @@ h1 {
 
 .main-menu1 {
     background-color: black;
-    padding: 0 0;
+    padding: 20px 20px;
     display: flex;
+    position: relative;
 }
 
 .first1 {
@@ -392,7 +475,7 @@ h1 {
 .skills-title {
 
     position: relative;
-    margin-top: 80px;
+    margin-top: 320px;
     font-size: 48px;
     font-weight: 500;
     width: fit-content;
@@ -1127,6 +1210,11 @@ label {
 }
 
 @media(max-width: 660px) {
+    .form {
+        position: relative;
+        left: 0;
+        margin-top: 15px;
+    }
     .container {
         padding-left: 10px;
         padding-right: 10px;
