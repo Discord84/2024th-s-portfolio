@@ -282,6 +282,8 @@ body {
     margin-top: 200px;
     top: 380px;
     right: 82px;
+    max-width: 512px;
+    width: 100%;
 }
 
 .arrow {
@@ -846,7 +848,6 @@ h1 {
     max-width: 1235px;
     background-color: white;
     border: 5px solid black;
-    box-shadow: 10px 10px 0 gray;
 }
 
 .starp {
@@ -921,7 +922,6 @@ h1 {
     margin-right: auto;
     z-index: 20;
     background-color: rgba(0, 0, 0, 0.425);
-
 }
 
 .form {
