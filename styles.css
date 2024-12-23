@@ -1087,6 +1087,11 @@ label {
     border: 3px dashed black;
     position: relative;
 }
+.portfolio-slide6 {
+    background: url(images/hero.png) center/contain no-repeat;
+    border: 3px dashed black;
+    position: relative;
+}
 
 
 
@@ -1136,7 +1141,7 @@ label {
 }
 
 .swiper-slide:nth-child(5n) {
-    background-color: rgb(118, 163, 12);
+    background-color: #F8F200
 }
 
 .swiper-slide:nth-child(6n) {
