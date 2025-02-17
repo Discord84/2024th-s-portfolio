@@ -1092,6 +1092,17 @@ label {
     border: 3px dashed black;
     position: relative;
 }
+.portfolio-slide7 {
+    background: url(images/todo.png) center/contain no-repeat;
+    border: 3px dashed black;
+    position: relative;
+}
+
+.portfolio-slide8 { 
+    background: url(images/Frame\ 1.png) center/contain no-repeat;
+    border: 3px dashed black;
+    position: relative;
+}
 
 
 
@@ -1149,11 +1160,11 @@ label {
 }
 
 .swiper-slide:nth-child(7n) {
-    background-color: rgb(35, 99, 19);
+    background-color: rgb(247, 213, 173);
 }
 
 .swiper-slide:nth-child(8n) {
-    background-color: rgb(0, 68, 255);
+    background-color: purple;
 }
 
 .swiper-slide:nth-child(9n) {
