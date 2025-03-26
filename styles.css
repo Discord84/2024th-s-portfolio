@@ -1103,6 +1103,11 @@ label {
     border: 3px dashed black;
     position: relative;
 }
+.portfolio-slide9 { 
+    background: url(images/IT-support-group.png) center/contain no-repeat;
+    border: 3px dashed black;
+    position: relative;
+}
 
 
 
@@ -1168,7 +1173,7 @@ label {
 }
 
 .swiper-slide:nth-child(9n) {
-    background-color: rgb(218, 12, 218);
+    background-color: rgb(255, 255, 255);
 }
 
 .swiper-slide:nth-child(10n) {
